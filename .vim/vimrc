@@ -1,0 +1,139 @@
+vim9script
+
+# PLUGINS
+#var jetpackfile = expand('<sfile>:p:h') .. '/pack/jetpack/opt/vim-jetpack/plugin/jetpack.vim'
+#var jetpackurl = "https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim"
+#if !filereadable(jetpackfile)
+#  system(printf('curl -fsSLo %s --create-dirs %s', jetpackfile, jetpackurl))
+#endif
+#
+#packadd vim-jetpack
+#jetpack#begin()
+##Jetpack 'tani/vim-jetpack', {'opt': 1}
+##Jetpack 'vim/colorschemes'
+##Jetpack 'vim-airline/vim-airline'
+##Jetpack 'vim-airline/vim-airline-themes'
+#jetpack#end()
+#
+#for name in jetpack#names()
+#  if !jetpack#tap(name)
+#    jetpack#sync()
+#    break
+#  endif
+#endfor
+
+
+#if need_to_install_plugins == 1
+#    echo "Installing plugins..."
+#    silent! JetpackSync
+#    echo "Done!"
+#    q
+#endif
+
+# PLUGINS END
+
+# BASIC
+syntax on
+filetype plugin indent on
+
+# Completion
+set path+=**
+set wildmenu
+#set wildmode=longest,list,full
+#set wildmode=list,full
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+# Tab
+set shiftwidth=4
+set tabstop=4
+set expandtab
+set smarttab
+
+# Searching
+set incsearch
+set ignorecase
+set smartcase
+set showmatch
+set hlsearch
+
+# Split Window
+set splitright
+set splitbelow
+
+# Numbering
+set number
+set relativenumber
+
+set colorcolumn=81
+set cursorline
+set nowrap
+
+set shell=/usr/bin/zsh
+tnoremap <ESC> <C-W>:q!<CR>
+
+# Open Help Vertically
+cabbrev h vert h
+
+# Open Split Buffer Vertically
+cabbrev vsb vert sb
+
+#set hidden
+
+# Scrolling
+set scrolloff=5
+
+# BASIC END
+
+# PLUGIN CONFIG
+# netrw
+g:netrw_winsize = 20
+g:netrw_banner = 0
+g:netrw_liststyle = 3
+g:netrw_keepdir = 0
+cabbrev l. Lexplore %:p:h
+# PLUGIN END
+
+# MAPPINGS
+# nohighlight
+nnoremap <leader><leader> :nohl<CR>
+
+# Split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+# MAPPINGS END
+# VIMSCRIPT
+
+au Filetype netrw :vert resize 20
+
+augroup ReduceNoise
+    autocmd!
+    # Automatically resize active split to 80 width
+    autocmd WinEnter * :call ResizeSplits()
+augroup END
+
+def ResizeSplits()
+    if &ft != 'netrw'
+        set winwidth=80
+        wincmd =
+    endif
+enddef
+
+
+# Mouse
+set mouse=a
+g:is_mouse_enabled = 0
+noremap <silent> <Leader>m :call ToggleMouse()<CR>
+def g:ToggleMouse()
+    if g:is_mouse_enabled == 1
+        echo "Mouse OFF"
+        set mouse=
+        g:is_mouse_enabled = 0
+    else
+        echo "Mouse ON"
+        set mouse=a
+        g:is_mouse_enabled = 1
+    endif
+enddef
