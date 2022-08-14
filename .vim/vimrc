@@ -39,15 +39,19 @@ filetype plugin indent on
 # Completion
 set path+=**
 set wildmenu
-#set wildmode=longest,list,full
-#set wildmode=list,full
+set wildmode=longest:full,full
+set wildoptions=pum
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 # Tab
 set shiftwidth=4
 set tabstop=4
-set expandtab
-set smarttab
+#set expandtab
+#set smarttab
+
+# List
+set list
+set listchars=tab:▶\ ,trail:⋅
 
 # Searching
 set incsearch
