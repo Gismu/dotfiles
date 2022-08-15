@@ -4,12 +4,12 @@
 [submodule ".vim/pack/colors/start/airline_themes"]
 	path = .vim/pack/colors/start/airline_themes
 	url = https://github.com/vim-airline/vim-airline-themes
-[submodule ".vim/pack/syntax/surround"]
-	path = .vim/pack/syntax/surround
+[submodule ".vim/pack/syntax/start/surround"]
+	path = .vim/pack/syntax/start/surround
 	url = https://github.com/tpope/vim-surround
-[submodule ".vim/pack/syntax/commentary"]
-	path = .vim/pack/syntax/commentary
+[submodule ".vim/pack/syntax/start/commentary"]
+	path = .vim/pack/syntax/start/commentary
 	url = https://github.com/tpope/vim-commentary
-[submodule ".vim/pack/syntax/emmet"]
-	path = .vim/pack/syntax/emmet
+[submodule ".vim/pack/syntax/start/emmet"]
+	path = .vim/pack/syntax/start/emmet
 	url = https://github.com/mattn/emmet-vim
