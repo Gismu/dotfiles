@@ -1,5 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
-let g:netrw_dirhist_3='/home/gismu/Documents'
-let g:netrw_dirhist_2='/run/media/gismu/Data/Documents/Invest'
-let g:netrw_dirhist_1='/run/media/gismu/Data/Documents'
