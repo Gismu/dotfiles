@@ -7,3 +7,6 @@
 [submodule ".vim/pack/syntax/surround"]
 	path = .vim/pack/syntax/surround
 	url = https://github.com/tpope/vim-surround
+[submodule ".vim/pack/syntax/commentary"]
+	path = .vim/pack/syntax/commentary
+	url = https://github.com/tpope/vim-commentary
