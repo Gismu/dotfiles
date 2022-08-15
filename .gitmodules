@@ -10,3 +10,6 @@
 [submodule ".vim/pack/syntax/commentary"]
 	path = .vim/pack/syntax/commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule ".vim/pack/syntax/emmet"]
+	path = .vim/pack/syntax/emmet
+	url = https://github.com/mattn/emmet-vim
