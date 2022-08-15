@@ -4,3 +4,6 @@
 [submodule ".vim/pack/colors/start/airline_themes"]
 	path = .vim/pack/colors/start/airline_themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule ".vim/pack/syntax/surround"]
+	path = .vim/pack/syntax/surround
+	url = https://github.com/tpope/vim-surround
