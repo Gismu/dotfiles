@@ -1,37 +1,5 @@
 vim9script
 
-# PLUGINS
-#var jetpackfile = expand('<sfile>:p:h') .. '/pack/jetpack/opt/vim-jetpack/plugin/jetpack.vim'
-#var jetpackurl = "https://raw.githubusercontent.com/tani/vim-jetpack/master/plugin/jetpack.vim"
-#if !filereadable(jetpackfile)
-#  system(printf('curl -fsSLo %s --create-dirs %s', jetpackfile, jetpackurl))
-#endif
-#
-#packadd vim-jetpack
-#jetpack#begin()
-##Jetpack 'tani/vim-jetpack', {'opt': 1}
-##Jetpack 'vim/colorschemes'
-##Jetpack 'vim-airline/vim-airline'
-##Jetpack 'vim-airline/vim-airline-themes'
-#jetpack#end()
-#
-#for name in jetpack#names()
-#  if !jetpack#tap(name)
-#    jetpack#sync()
-#    break
-#  endif
-#endfor
-
-
-#if need_to_install_plugins == 1
-#    echo "Installing plugins..."
-#    silent! JetpackSync
-#    echo "Done!"
-#    q
-#endif
-
-# PLUGINS END
-
 # BASIC
 syntax on
 filetype plugin indent on
@@ -88,15 +56,6 @@ set scrolloff=5
 
 # BASIC END
 
-# PLUGIN CONFIG
-# netrw
-g:netrw_winsize = 20
-g:netrw_banner = 0
-g:netrw_liststyle = 3
-g:netrw_keepdir = 0
-cabbrev l. Lexplore %:p:h
-# PLUGIN END
-
 # MAPPINGS
 # nohighlight
 nnoremap <leader><leader> :nohl<CR>
@@ -141,3 +100,17 @@ def g:ToggleMouse()
         g:is_mouse_enabled = 1
     endif
 enddef
+
+# PLUGIN CONFIG
+# netrw
+g:netrw_winsize = 20
+g:netrw_banner = 0
+g:netrw_liststyle = 3
+g:netrw_keepdir = 0
+cabbrev l. Lexplore %:p:h
+
+# airline
+g:airline_powerline_fonts = 1
+ 
+# PLUGIN END
+
