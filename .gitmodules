@@ -19,3 +19,6 @@
 [submodule ".vim/pack/colors/opt/onedark"]
 	path = .vim/pack/colors/opt/onedark
 	url = https://github.com/joshdick/onedark.vim
+[submodule ".vim/pack/colors/opt/tokyonight"]
+	path = .vim/pack/colors/opt/tokyonight
+	url = https://github.com/ghifarit53/tokyonight-vim
