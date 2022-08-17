@@ -16,3 +16,6 @@
 [submodule ".vim/pack/colors/start/dracula"]
 	path = .vim/pack/colors/opt/dracula
 	url = https://github.com/dracula/vim
+[submodule ".vim/pack/colors/opt/onedark"]
+	path = .vim/pack/colors/opt/onedark
+	url = https://github.com/joshdick/onedark.vim
