@@ -4,6 +4,10 @@ vim9script
 syntax on
 filetype plugin indent on
 
+# Colorscheme
+hi Pmenu ctermfg=231 ctermbg=238
+hi PmenuSel ctermfg=16 ctermbg=44
+
 # Completion
 set path+=**
 set wildmenu
