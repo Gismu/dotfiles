@@ -22,3 +22,6 @@
 [submodule ".vim/pack/colors/opt/tokyonight"]
 	path = .vim/pack/colors/opt/tokyonight
 	url = https://github.com/ghifarit53/tokyonight-vim
+[submodule ".vim/pack/plugins/start/repeat"]
+	path = .vim/pack/plugins/start/repeat
+	url = https://github.com/tpope/vim-repeat
