@@ -28,3 +28,6 @@
 [submodule ".vim/pack/plugins/start/fugitive"]
 	path = .vim/pack/plugins/start/fugitive
 	url = https://github.com/tpope/vim-fugitive/
+[submodule ".tmux/plugins/resurrect"]
+	path = .tmux/plugins/resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect
