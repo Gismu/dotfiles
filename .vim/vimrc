@@ -4,6 +4,9 @@ vim9script
 syntax on
 filetype plugin indent on
 
+# Clipboard
+set clipboard=unnamedplus
+
 # Colorscheme
 hi Pmenu ctermfg=231 ctermbg=238
 hi PmenuSel ctermfg=16 ctermbg=44
@@ -62,6 +65,9 @@ set scrolloff=5
 # BASIC END
 
 # MAPPINGS
+# Clipboard
+nnoremap Y "+y
+
 # nohighlight
 nnoremap <leader><leader> :nohl<CR>
 
