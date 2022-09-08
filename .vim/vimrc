@@ -12,7 +12,7 @@ hi Pmenu ctermfg=231 ctermbg=238
 hi PmenuSel ctermfg=16 ctermbg=44
 
 # Completion
-set path+=**
+set path+=.,,components/**,pages/**
 set wildmenu
 set wildmode=longest:full,full
 set wildoptions=pum
