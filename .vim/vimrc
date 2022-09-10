@@ -26,8 +26,9 @@ set expandtab
 set smarttab
 
 # List
-#set list
+set list
 #set listchars=tab:▶\ ,trail:⋅
+set listchars=trail:⋅
 
 # Searching
 set incsearch
