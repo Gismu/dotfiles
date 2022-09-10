@@ -122,6 +122,9 @@ cabbrev l. Lexplore %:p:h
 
 # airline
 g:airline_powerline_fonts = 1
+
+# emmet
+g:user_emmet_leader_key = ','
  
 # PLUGIN END
 
