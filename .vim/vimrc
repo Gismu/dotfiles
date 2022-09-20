@@ -1,6 +1,6 @@
 vim9script
 
-# BASIC
+#BASIC
 syntax on
 filetype plugin indent on
 
@@ -8,8 +8,8 @@ filetype plugin indent on
 set clipboard=unnamedplus
 
 # Colorscheme
-hi Pmenu ctermfg=231 ctermbg=238
-hi PmenuSel ctermfg=16 ctermbg=44
+# hi Pmenu ctermfg=231 ctermbg=238
+# hi PmenuSel ctermfg=16 ctermbg=44
 
 # Completion
 set path+=.,,components/**,pages/**
@@ -131,5 +131,11 @@ g:airline_powerline_fonts = 1
 # emmet
 g:user_emmet_leader_key = ','
  
+# tokyonight
+colorscheme tokyonight
+g:airline_theme = "tokyonight"
+g:tokyonight_transparent_background = 1
+g:tokyonight_menu_selection_background = 'blue'
+
 # PLUGIN END
 
