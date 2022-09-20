@@ -132,10 +132,10 @@ g:airline_powerline_fonts = 1
 g:user_emmet_leader_key = ','
  
 # tokyonight
-colorscheme tokyonight
 g:airline_theme = "tokyonight"
 g:tokyonight_transparent_background = 1
 g:tokyonight_menu_selection_background = 'blue'
+colorscheme tokyonight
 
 # PLUGIN END
 
