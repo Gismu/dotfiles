@@ -34,3 +34,6 @@
 [submodule ".tmux/plugins/continuum"]
 	path = .tmux/plugins/continuum
 	url = https://github.com/tmux-plugins/tmux-continuum
+[submodule ".vim/pack/syntax/start/vue"]
+	path = .vim/pack/syntax/start/vue
+	url = https://github.com/leafOfTree/vim-vue-plugin
