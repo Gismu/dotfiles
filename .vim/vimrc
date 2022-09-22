@@ -7,10 +7,6 @@ filetype plugin indent on
 # Clipboard
 set clipboard=unnamedplus
 
-# Colorscheme
-# hi Pmenu ctermfg=231 ctermbg=238
-# hi PmenuSel ctermfg=16 ctermbg=44
-
 # Completion
 set path+=.,,components/**,pages/**
 set wildmenu
@@ -19,11 +15,13 @@ set wildoptions=pum
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set wildignorecase
 
-# Tab
-set shiftwidth=4
-set tabstop=4
+# Tab and Indent
+set shiftwidth=2
+set tabstop=2
 set expandtab
 set smarttab
+set autoindent
+set smartindent
 
 # List
 set list
