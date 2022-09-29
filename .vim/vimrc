@@ -86,16 +86,16 @@ nnoremap <C-P> :bprevious<CR>
 au Filetype netrw :vert resize 20
 
 augroup ReduceNoise
-    autocmd!
-    # Automatically resize active split to 80 width
-    autocmd WinEnter * :call ResizeSplits()
+  autocmd!
+  # Automatically resize active split to 80 width
+  autocmd WinEnter * :call ResizeSplits()
 augroup END
 
 def ResizeSplits()
-    if &ft != 'netrw'
-        set winwidth=80
-        wincmd =
-    endif
+  if &ft != 'netrw'
+    set winwidth=80
+    wincmd =
+  endif
 enddef
 
 
@@ -104,21 +104,21 @@ set mouse=a
 g:is_mouse_enabled = 0
 noremap <silent> <Leader>m :call ToggleMouse()<CR>
 def g:ToggleMouse()
-    if g:is_mouse_enabled == 1
-        echo "Mouse OFF"
-        set mouse=
-        g:is_mouse_enabled = 0
-    else
-        echo "Mouse ON"
-        set mouse=a
-        g:is_mouse_enabled = 1
-    endif
+  if g:is_mouse_enabled == 1
+    echo "Mouse OFF"
+    set mouse=
+    g:is_mouse_enabled = 0
+  else
+    echo "Mouse ON"
+    set mouse=a
+    g:is_mouse_enabled = 1
+  endif
 enddef
 
 # PLUGIN CONFIG
 # netrw
 g:netrw_winsize = 20
-g:netrw_banner = 0
+#g:netrw_banner = 0
 g:netrw_liststyle = 3
 g:netrw_keepdir = 0
 cabbrev l. Lexplore %:p:h
@@ -128,7 +128,7 @@ g:airline_powerline_fonts = 1
 
 # emmet
 g:user_emmet_leader_key = ','
- 
+
 # tokyonight
 g:airline_theme = "tokyonight"
 g:tokyonight_transparent_background = 1
