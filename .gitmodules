@@ -37,3 +37,6 @@
 [submodule ".vim/pack/syntax/start/vue"]
 	path = .vim/pack/syntax/start/vue
 	url = https://github.com/leafOfTree/vim-vue-plugin
+[submodule ".vim/pack/plugins/opt/lsp"]
+	path = .vim/pack/plugins/opt/lsp
+	url = https://github.com/yegappan/lsp
