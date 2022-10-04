@@ -145,7 +145,7 @@ var lspServers = [
       },
   {
       filetype: 'vue',
-      path: '/usr/bin/vim-language-server',
+      path: '/usr/bin/vue-language-server',
       args: ['--stdio']
       }
       ]
