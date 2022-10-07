@@ -135,6 +135,7 @@ g:tokyonight_transparent_background = 1
 g:tokyonight_menu_selection_background = 'blue'
 colorscheme tokyonight
 
+# lsp
 packadd lsp
 
 var lspServers = [
@@ -143,11 +144,11 @@ var lspServers = [
       path: '/usr/bin/typescript-language-server',
       args: ['--stdio']
       },
-  {
-      filetype: 'vue',
-      path: '/usr/bin/vue-language-server',
-      args: ['--stdio']
-      }
+  # {
+  #     filetype: 'vue',
+  #     path: '/usr/bin/vue-language-server',
+  #     args: ['--stdio']
+  #     }
       ]
 
 call LspAddServer(lspServers)
