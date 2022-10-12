@@ -40,3 +40,6 @@
 [submodule ".vim/pack/plugins/opt/lsp"]
 	path = .vim/pack/plugins/opt/lsp
 	url = https://github.com/yegappan/lsp
+[submodule ".vim/pack/plugins/opt/vinegar"]
+	path = .vim/pack/plugins/opt/vinegar
+	url = https://github.com/tpope/vim-vinegar
