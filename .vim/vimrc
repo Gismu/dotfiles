@@ -9,6 +9,7 @@ set clipboard=unnamedplus
 
 # Completion
 set path+=.,,assets/**,components/**,composables/**,layouts/**,pages/**
+set path+=app/**,config/**,database/**,resources/**,routes/**
 set wildmenu
 set wildmode=longest:full,full
 set wildoptions=pum
