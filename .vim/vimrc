@@ -143,16 +143,25 @@ packadd lsp
 
 var lspServers = [
   {
-      filetype: ['javascript', 'typescript'],
-      path: '/usr/bin/typescript-language-server',
-      args: ['--stdio']
-      },
+    filetype: ['javascript', 'typescript'],
+    path: '/usr/bin/typescript-language-server',
+    args: ['--stdio']
+  },
   # {
   #     filetype: 'vue',
   #     path: '/usr/bin/vue-language-server',
   #     args: ['--stdio']
-  #     }
-      ]
+  #     },
+  {
+    filetype: ['php'],
+    path: '/usr/bin/intelephense',
+    args: ['--stdio'],
+    syncInit: v:true,
+    initializationOptions: {
+      licenceKey: 'absolute path to file with key or key itself'
+    }
+  }
+]
 
 call LspAddServer(lspServers)
 
