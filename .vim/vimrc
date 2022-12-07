@@ -24,9 +24,7 @@ set smarttab
 set autoindent
 set smartindent
 
-au BufNewFile,BufRead *.js, *.html, *.css
-    \ set tabstop=2
-    \ set shiftwidth=2
+au BufNewFile,BufRead *.{js,ts,html,css,vue} set ts=2 sw=2
 
 # List
 set list
