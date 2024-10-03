@@ -43,3 +43,6 @@
 [submodule ".vim/pack/plugins/opt/vinegar"]
 	path = .vim/pack/plugins/opt/vinegar
 	url = https://github.com/tpope/vim-vinegar
+[submodule ".vim/pack/plugins/opt/fuzzyy"]
+	path = .vim/pack/plugins/opt/fuzzyy
+	url = https://github.com/Donaldttt/fuzzyy

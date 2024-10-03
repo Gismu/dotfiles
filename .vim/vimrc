@@ -170,5 +170,8 @@ var lspServers = [
 
 call LspAddServer(lspServers)
 
+# fuzzyy
+packadd fuzzyy
+
 # PLUGIN END
 
